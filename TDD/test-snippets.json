@@ -1,0 +1,109 @@
+{
+  "Create React Test": {
+    "scope": "javascript,typescript",
+    "prefix": "testr",
+    "body": [
+      "import React from 'react';",
+      "import { expect, shallow } from '@ow/ow-test-utils';",
+      "import $1 from './$1';",
+      "",
+      "describe('$1', () => {",
+      "\tdescribe('when', () => {",
+      "\t\tit('should ', () => {",
+      "\t\t\tconst wrapper = shallow(<$1 />);",
+      "\t\t});",
+      "\t});",
+      "});",
+      "$2"
+    ],
+    "description": "Create react test template"
+  },
+  "Create Node Test": {
+    "scope": "javascript,typescript",
+    "prefix": "testn",
+    "body": [
+      "const { expect, sinon } = require('@ow/ow-test-utils');",
+      "",
+      "describe('$1', () => {",
+      "\tconst sandbox = sinon.createSandbox();",
+      "\tconst $1 = require('./$1');",
+      "",
+      "\tbefore(() => {",
+      "\t\t",
+      "\t});",
+      "",
+      "\tafter(() => {",
+      "\t\tsandbox.reset();",
+      "\t\tsandbox.restore();",
+      "\t});",
+      "",
+      "\tafterEach(() => {",
+      "\t\tsandbox.resetHistory();",
+      "\t});",
+      "",
+      "\tdescribe('', () => {",
+      "\t\tit('', () => {",
+      "\t\t\t",
+      "\t\t});",
+      "\t});",
+      "});",
+      "$2"
+    ],
+    "description": "Create node test template"
+  },
+  "describe": {
+    "scope": "javascript,typescript",
+    "prefix": "$desc",
+    "body": [
+      "describe('$1', () => {",
+      "  $2",
+      "})"
+    ]
+  },
+  "before": {
+    "scope": "javascript,typescript",
+    "prefix": "$before",
+    "body": [
+      "before('$1', () => {",
+      "  $2",
+      "})"
+    ]
+  },
+  "after": {
+    "scope": "javascript,typescript",
+    "prefix": "$after",
+    "body": [
+      "after('$1', () => {",
+      "  $2",
+      "})"
+    ]
+  },
+  "afterEach": {
+    "scope": "javascript,typescript",
+    "prefix": "$afterEach",
+    "body": [
+      "afterEach(() => {",
+      "  $1",
+      "})"
+    ]
+  },
+  "beforeEach": {
+    "scope": "javascript,typescript",
+    "prefix": "$beforeEach",
+    "body": [
+      "beforeEach(() => {",
+      "  $1",
+      "})"
+    ]
+  },
+  "it": {
+    "scope": "javascript,typescript",
+    "prefix": "$it",
+    "body": [
+      "it('$1', () => {",
+      "  $2",
+      "})"
+    ],
+    "description": "Mocha `it`"
+  }
+}
