@@ -1,5 +1,17 @@
 
 ## How to use VS code snippets
+
+```
+cmd + shift + p (bring up command options)
+type 'snip'
+select 'Configure User Snippets' from the options
+select 'New Global Snippets File' from the options
+type 'test snippets' as the file name
+copy and paste the snippets from test-snippets.json in this repo into the new file
+```
+
+## How to create snippets
+
 Place your test workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 description. Add comma separated ids of the languages where the snippet is applicable in the scope field. 
 
